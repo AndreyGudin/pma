@@ -2,11 +2,11 @@ import { User } from '../shared/interfaces';
 import { http } from './interceptor.service';
 
 function signin(user: User) {
-  return http.post('/signin', user);
+  return http.post('/auth/signin', user);
 }
 
 function signup(user: User) {
-  return http.post('/signup', user);
+  return http.post('/auth/signup', user);
 }
 
 function signout() {
